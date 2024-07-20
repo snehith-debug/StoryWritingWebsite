@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+<body>
+    <h2>Express your thoughts in your own story form:</h2><br><br>
+    <form method="post" action="/postNew" >
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+        <input name="title" placeholder="enter title here" type="text" class="form-control" required/>
+        </div><br>
+        <div class="mb-3">
+            <label for="description" class="form-label">description</label>
+        <textarea name="description" placeholder="write your story description here" type="text" class="form-control" required></textarea>
+        </div><br>
+        <div class="mb-3">
+            <label for="story" class="form-label">story</label>
+        <textarea name="story" placeholder="write your story here" type="text" class="form-control" required></textarea>
+        </div><br>
+        <button class="btn btn-dark">enter</button>
+    </form>
+    <br><br>
+</body>
+</div>
+</div>

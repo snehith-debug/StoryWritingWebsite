@@ -1,0 +1,18 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h1 style="color: #0079FF;"><i>STORIES</i></h1><hr>
+<div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+    <% for(let list of allListing){%>
+        <a href="/get/<%= list._id %>" class="listing-link">
+    <div class="card col" style="width: 18rem;">
+            <div class="card-img-overlay"></div>
+        <div class="card-body">
+        <p class="card-text">
+            <h5><b><i><%= list.title %></i></b></h5>
+            <h6><i> <%= list.description %></i></h6>
+        </p>
+        </div>
+    </div>
+</a>
+    <%} %></div>
+</body>
